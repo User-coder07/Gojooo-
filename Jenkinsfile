@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('clone repo'){
             steps{
-                   git branch: 'main' , url: 'https://github.com/User-coder07/Gojooo-.git'
+                   git branch: 'main' , url: 'https://github.com/User-coder07/Gojooo-.git',credentialsId: 'pr'
             }
         }
         stage('compile java'){
