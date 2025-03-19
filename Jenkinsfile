@@ -12,12 +12,12 @@ pipeline{
         }
         stage('compile java'){
             steps{
-                   git 'javac file1.java'
+                   bat 'javac file1.java'
             }
         }
         stage('run java code'){
             steps{
-                   git 'java file1'
+                   bat 'java file1'
             }
         }
     }
